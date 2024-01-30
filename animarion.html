@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 600px;
+            height: 500px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            transform: skew(124deg, 10deg);
+            border: 1px solid black;
+
+        }
+
+        .item1 {
+            width: 650px;
+            height: 549px;
+            /* background-color: gainsboro; */
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+            /* border: 10px dotted black; */
+            position: relative;
+            left: -32px;
+            top: -26px;
+            animation-duration: 10s;
+            animation-name: round1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes round1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(720deg);
+            }
+
+        }
+
+        .box1 {
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            position: relative;
+            left: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <div class="item1">
+                <div class="box1"></div>
+            </div>
+
+        </div>
+    </center>
+</body>
+
+</html>
